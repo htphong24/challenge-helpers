@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace HelperLibrary
 {
-    public class Helper
+    public static class Helper
     {
         /// <summary>
         /// Generates an array containing random numbers
@@ -13,7 +13,7 @@ namespace HelperLibrary
         /// <param name="max">Min value of the elements in the generated array</param>
         /// <param name="length">Length generated array</param>
         /// <returns></returns>
-        public int[] GenerateRandomArray(int min, int max, int length)
+        public static int[] GenerateRandomArray(int min, int max, int length)
         {
             int[] result = null;
             Random randNum = new Random();
@@ -30,7 +30,7 @@ namespace HelperLibrary
         /// <param name="min">Min value of the elements in the generated array</param>
         /// <param name="max">Max value of the elements in the generated array</param>
         /// <returns></returns>
-        public int[] GenerateConsecutiveArray(int min, int max)
+        public static int[] GenerateConsecutiveArray(int min, int max)
         {
             int[] result = null;
             result = Enumerable

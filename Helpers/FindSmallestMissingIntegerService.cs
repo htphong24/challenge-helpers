@@ -38,8 +38,6 @@ namespace HelperLibrary
 
         private void DoRun_Test()
         {
-            Helper h = new Helper();
-
             int r0010 = Run(new int[] { 1, 3, 6, 4, 1, 2 }, out double t0010); // 5
 
             // positive_only
@@ -67,11 +65,11 @@ namespace HelperLibrary
             int r0080 = Run(new int[] { }, out double t0080); // 1
 
             // large random array
-            int[] randomArray = h.GenerateRandomArray(min: -1, max: 3, length: 1000);
+            int[] randomArray = Helper.GenerateRandomArray(min: -1, max: 3, length: 1000);
             int r0090 = Run(randomArray, out double t0090);
 
             // large consecutive array
-            int[] consecutiveArray = h.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
+            int[] consecutiveArray = Helper.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
             int r0100 = Run(consecutiveArray, out double t0100); // max + 1
         }
     }
