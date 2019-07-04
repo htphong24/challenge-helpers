@@ -1,4 +1,5 @@
 ﻿using System;
+using HelperLibrary;
 
 namespace ConsoleAppTest
 {
@@ -6,7 +7,7 @@ namespace ConsoleAppTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var result = (new FindSmallestMissingIntegerService()).Run(new int[] { int.MinValue, int.MaxValue }, out double time);
         }
     }
 }
