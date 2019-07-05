@@ -9,6 +9,7 @@ namespace ConsoleAppTest
         {
             var result = (new FindSmallestMissingIntService()).Run(new int[] { int.MinValue, int.MaxValue }, out double time);
             (new FindSmallestIntSameNumOfDigitsService()).RunTest();
+            (new FindMinNumOfStrokesService()).RunTest();
         }
     }
 }

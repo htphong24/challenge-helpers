@@ -25,7 +25,7 @@ namespace HelperLibrary
         }
 
         /// <summary>
-        /// Generates an array containing consecutive numbers
+        /// Generates an array containing consecutive numbers, e.g. [5, 6, 7, 8, 9, 10]
         /// </summary>
         /// <param name="min">Min value of the elements in the generated array</param>
         /// <param name="max">Max value of the elements in the generated array</param>
