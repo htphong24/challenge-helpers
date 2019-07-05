@@ -12,6 +12,11 @@ namespace HelperLibrary
             throw new NotImplementedException();
         }
 
+        public virtual void RunTest()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// 
         /// </summary>
