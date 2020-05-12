@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace HelperLibrary
 {
@@ -34,10 +32,8 @@ namespace HelperLibrary
                 var l = A.Take(i);
                 IEnumerable<int> l2 = Enumerable.Range(1, i);
                 l2 = l2.Except(l);
-                if (l2.Count() == 0) // all bulbs turned on
-                {
+                if (!l2.Any()) // all bulbs turned on
                     result++;
-                }
             }
 
             return result;

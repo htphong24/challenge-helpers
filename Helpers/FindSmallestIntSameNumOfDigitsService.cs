@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace HelperLibrary
 {
@@ -15,7 +12,7 @@ namespace HelperLibrary
         protected override double DoRun(int number)
         {
             int numOfDigits = number.ToString().Length;
-            return numOfDigits == 1 
+            return numOfDigits == 1
                 ? 0
                 : Math.Pow(10, numOfDigits - 1);
         }

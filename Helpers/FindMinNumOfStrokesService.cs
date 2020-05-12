@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace HelperLibrary
 {
@@ -60,12 +57,8 @@ namespace HelperLibrary
 
             Int64 result = array[0];
             for (int i = 1; i < array.Length; i++)
-            {
                 if (array[i] > array[i-1])
-                {
                     result += array[i] - array[i - 1];
-                }
-            }
 
             return result > 1000000000
                 ? -1
