@@ -15,7 +15,7 @@ namespace HelperLibrary
         public static int[] GenerateRandomArray(int min, int max, int length)
         {
             int[] result = null;
-            Random randNum = new Random();
+            var randNum = new Random();
             result = Enumerable
                        .Repeat(0, length)
                        .Select(i => randNum.Next(min, max + 1))

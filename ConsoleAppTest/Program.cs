@@ -8,7 +8,7 @@ namespace ConsoleAppTest
     {
         static void Main(string[] args)
         {
-            var result = (new FindSmallestMissingIntService()).Run(new int[] { int.MinValue, int.MaxValue }, out double time);
+            (new FindSmallestMissingIntService()).Run(new[] { int.MinValue, int.MaxValue }, out var time);
             (new FindSmallestIntSameNumOfDigitsService()).RunTest();
             (new FindMinNumOfStrokesService()).RunTest();
             (new FindLongestBinaryGapService()).RunTest();

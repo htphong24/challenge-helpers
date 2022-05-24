@@ -23,8 +23,8 @@ namespace HelperLibrary
         /// <returns></returns>
         public RS Run(RQ request, out double time)
         {
-            Stopwatch stopwatch = Stopwatch.StartNew();
-            RS result = DoRun(request);
+            var stopwatch = Stopwatch.StartNew();
+            var result = DoRun(request);
             stopwatch.Stop();
             time = stopwatch.Elapsed.TotalMilliseconds;
             return result;
