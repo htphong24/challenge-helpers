@@ -14,6 +14,7 @@ namespace ConsoleAppTest
             new FindLongestBinaryGapService().RunTest();
             new RomanToIntegerService().RunTest();
             new CheckPalindromeLinkedListService().RunTest();
+            new RansomNoteService().RunTest();
         }
     }
 }
