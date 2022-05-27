@@ -12,6 +12,7 @@ namespace ConsoleAppTest
             (new FindSmallestIntSameNumOfDigitsService()).RunTest();
             (new FindMinNumOfStrokesService()).RunTest();
             (new FindLongestBinaryGapService()).RunTest();
+            (new RomanToIntegerService()).RunTest();
         }
     }
 }
