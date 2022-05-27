@@ -8,11 +8,12 @@ namespace ConsoleAppTest
     {
         static void Main(string[] args)
         {
-            (new FindSmallestMissingIntService()).Run(new[] { int.MinValue, int.MaxValue }, out var time);
-            (new FindSmallestIntSameNumOfDigitsService()).RunTest();
-            (new FindMinNumOfStrokesService()).RunTest();
-            (new FindLongestBinaryGapService()).RunTest();
-            (new RomanToIntegerService()).RunTest();
+            new FindSmallestMissingIntService().Run(new[] { int.MinValue, int.MaxValue }, out var time);
+            new FindSmallestIntSameNumOfDigitsService().RunTest();
+            new FindMinNumOfStrokesService().RunTest();
+            new FindLongestBinaryGapService().RunTest();
+            new RomanToIntegerService().RunTest();
+            new CheckPalindromeLinkedListService().RunTest();
         }
     }
 }
