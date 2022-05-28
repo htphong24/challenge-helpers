@@ -15,6 +15,7 @@ namespace ConsoleAppTest
             new RomanToIntegerService().RunTest();
             new CheckPalindromeLinkedListService().RunTest();
             new RansomNoteService().RunTest();
+            new ReverseLinkedListService().RunTest();
         }
     }
 }

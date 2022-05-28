@@ -97,17 +97,4 @@ namespace HelperLibrary
             var r0060 = Run(node0060B, out var t0060); // false
         }
     }
-
-    public class ListNode
-    {
-        public int Val { get; private set; }
-
-        public ListNode Next { get; private set; }
-
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            Val = val;
-            Next = next;
-        }
-    }
 }
