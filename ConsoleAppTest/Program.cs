@@ -19,6 +19,7 @@ namespace ConsoleAppTest
             new MiddleOfTheLinkedListService().RunTest();
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
             new BuddyStringsService().RunTest();
+            new CheckIfAStringContainsAllBinaryCodesService().RunTest();
         }
     }
 }
