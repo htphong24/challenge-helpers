@@ -16,6 +16,8 @@ namespace ConsoleAppTest
             new CheckPalindromeLinkedListService().RunTest();
             new RansomNoteService().RunTest();
             new ReverseLinkedListService().RunTest();
+            new MiddleOfTheLinkedListService().RunTest();
+            new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
         }
     }
 }
