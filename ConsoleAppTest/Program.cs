@@ -18,6 +18,7 @@ namespace ConsoleAppTest
             new ReverseLinkedListService().RunTest();
             new MiddleOfTheLinkedListService().RunTest();
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
+            new BuddyStringsService().RunTest();
         }
     }
 }
