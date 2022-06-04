@@ -20,6 +20,7 @@ namespace ConsoleAppTest
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
             new BuddyStringsService().RunTest();
             new CheckIfAStringContainsAllBinaryCodesService().RunTest();
+            new IntegerReplacementService().RunTest();
         }
     }
 }
