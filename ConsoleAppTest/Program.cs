@@ -10,7 +10,6 @@ namespace ConsoleAppTest
         {
             new FindSmallestMissingIntService().Run(new[] { int.MinValue, int.MaxValue }, out var time);
             new FindSmallestIntSameNumOfDigitsService().RunTest();
-            new FindMinNumOfStrokesService().RunTest();
             new RomanToIntegerService().RunTest();
             new RansomNoteService().RunTest();
             new ReverseLinkedListService().RunTest();
