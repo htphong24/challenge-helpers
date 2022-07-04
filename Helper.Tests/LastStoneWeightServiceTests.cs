@@ -1,7 +1,7 @@
 using HelperLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Helper.Tests
+namespace ChallengeHelpers.Tests
 {
     [TestClass]
     public class LastStoneWeightServiceTests

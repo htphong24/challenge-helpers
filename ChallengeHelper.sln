@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTest", "ConsoleAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperLibrary", "Helpers\HelperLibrary.csproj", "{6D9CCD42-0C45-43E7-A1A2-A26DCC484E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper.Tests", "Helper.Tests\Helper.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeHelpers.Tests", "Helper.Tests\ChallengeHelpers.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
