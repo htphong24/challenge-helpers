@@ -13,7 +13,6 @@ namespace ConsoleAppTest
             new FindMinNumOfStrokesService().RunTest();
             new FindLongestBinaryGapService().RunTest();
             new RomanToIntegerService().RunTest();
-            new CheckPalindromeLinkedListService().RunTest();
             new RansomNoteService().RunTest();
             new ReverseLinkedListService().RunTest();
             new MiddleOfTheLinkedListService().RunTest();
