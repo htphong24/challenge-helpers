@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public static class Helper
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public class FindMinNumOfStrokesService : ServiceBase<int[], int>
     {

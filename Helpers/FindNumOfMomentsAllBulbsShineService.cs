@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public class FindNumOfMomentsAllBulbsShineService : ServiceBase<int[], int>
     {

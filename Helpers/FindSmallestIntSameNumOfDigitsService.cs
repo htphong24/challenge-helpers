@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public class FindSmallestIntSameNumOfDigitsService : ServiceBase<int, double>
     {

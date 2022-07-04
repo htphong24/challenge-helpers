@@ -1,4 +1,4 @@
-﻿namespace HelperLibrary
+﻿namespace ChallengeHelpers.Services
 {
     public class ListNode
     {

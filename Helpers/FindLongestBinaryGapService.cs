@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public class FindLongestBinaryGapService : ServiceBase<int, int>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public abstract class ServiceBase<RQ, RS>
     {

@@ -1,4 +1,4 @@
-using HelperLibrary;
+using ChallengeHelpers.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ChallengeHelpers.Tests

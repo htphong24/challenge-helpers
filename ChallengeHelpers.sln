@@ -5,9 +5,9 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTest", "ConsoleAppTest\ConsoleAppTest.csproj", "{F9607F07-335A-4D65-99B8-4DA7BAC65416}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperLibrary", "Helpers\HelperLibrary.csproj", "{6D9CCD42-0C45-43E7-A1A2-A26DCC484E79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeHelpers.Services", "Helpers\ChallengeHelpers.Services.csproj", "{6D9CCD42-0C45-43E7-A1A2-A26DCC484E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeHelpers.Tests", "Helper.Tests\ChallengeHelpers.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeHelpers.Tests", "Helper.Tests\ChallengeHelpers.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

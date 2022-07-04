@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using HelperLibrary;
+using ChallengeHelpers.Services;
 
 namespace ConsoleAppTest
 {

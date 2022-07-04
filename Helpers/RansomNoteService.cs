@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HelperLibrary
+namespace ChallengeHelpers.Services
 {
     public class RansomNoteService : ServiceBase<RansomNoteRequest, bool>
     {
