@@ -33,39 +33,5 @@ namespace ChallengeHelpers.Services
             return lengths.Max();
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run(9, out var t0010); // 2
-
-            // 
-            var r0020 = Run(15, out var t0020); // 0
-
-            // 
-            var r0023 = Run(20, out var t0023); // 1
-
-            // 
-            var r0025 = Run(32, out var t0025); // 0
-
-            // 
-            var r0030 = Run(529, out var t0030); // 4
-
-            // 
-            var r0040 = Run(1041, out var t0040); // 5
-
-            // min input
-            var r0050 = Run(1, out var t0050); // 0
-
-            // max input
-            var r0060 = Run(int.MaxValue, out var t0060); // = 2^31 -1 => all 1s => no binary gap => 0
-
-            // another extreme input
-            var r0070 = Run(Convert.ToInt32(Math.Pow(2,30)), out var t0070); // = 1000...000 => 0
-
-            // another extreme input
-            var r0080 = Run(Convert.ToInt32(Math.Pow(2, 30)) + 1, out var t0080); // = 1000...001 => 30 - 1 = 29
-
-            // another extreme input
-            var r0090 = Run(Convert.ToInt32(Math.Pow(2, 30) + Math.Pow(2, 27) + Math.Pow(2, 5) + Math.Pow(2, 11)) +  1, out var t0090); // = 27 - 11 - 1 = 15
-        }
     }
 }
