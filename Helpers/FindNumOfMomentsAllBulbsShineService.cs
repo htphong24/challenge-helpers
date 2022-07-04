@@ -39,18 +39,5 @@ namespace ChallengeHelpers.Services
             return result;
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run(new int[] { 2, 1, 3, 5, 4 }, out var t0010); // 3
-            var r0020 = Run(new int[] { 2, 3, 4, 1, 5 }, out var t0020); // 2
-            var r0030 = Run(new int[] { 1, 3, 4, 2, 5 }, out var t0030); // 3
-            var r0040 = Run(new int[] { 1 }, out var t0040); // 1
-            var r0050 = Run(new int[] { 100 }, out var t0050); // 0
-            var r0060 = Run(new int[] { 55 }, out var t0060); // 0
-            var r0070 = Run(new int[] { 2, 10, 4, 100 }, out var t0070); // 0
-            var r0080 = Run(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, out var t0080); // 9
-            var r0090 = Run(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 10 }, out var t0090); // 8
-            var r0100 = Run(new int[] { 100, 99, 98, 97, 96, 95, 94, 93, 92 }, out var t0100); // 100
-        }
     }
 }
