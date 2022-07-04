@@ -32,41 +32,5 @@ namespace ChallengeHelpers.Services
             return l2.FirstOrDefault();
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run(new[] {1, 3, 6, 4, 1, 2}, out var t0010); // 5
-
-            // positive_only
-            var r0020 = Run(new[] {1, 4, 10}, out var t0020); // 2
-
-            // positive_only
-            var r0025 = Run(new[] {100, 101, 102}, out var t0025); // 1
-
-            // negative_only
-            var r0030 = Run(new[] {-100, -103}, out var t0030); // 1
-
-            // negative_and_pose
-            var r0040 = Run(new[] {-1000000, 1, 3, 6, 4, 1, 1000000}, out var t0040); // 2
-
-            // 
-            var r0050 = Run(new[] {4, 0, 6, 500, 304, 10, 63, 100, 8, 9999, 2}, out var t0050); // 1
-
-            // extreme_single
-            var r0060 = Run(new[] {int.MaxValue}, out var t0060); // 1 
-
-            // extreme_min_max_e
-            var r0070 = Run(new[] {int.MinValue, int.MaxValue}, out var t0070); // 1
-
-            // empty
-            var r0080 = Run(new int[] { }, out var t0080); // 1
-
-            // large random array
-            var randomArray = Helper.GenerateRandomArray(min: -1, max: 3, length: 1000);
-            var r0090 = Run(randomArray, out var t0090);
-
-            // large consecutive array
-            var consecutiveArray = Helper.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
-            var r0100 = Run(consecutiveArray, out var t0100); // max + 1
-        }
     }
 }
