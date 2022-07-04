@@ -61,31 +61,6 @@ namespace ChallengeHelpers.Services
             return false;
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run(new BuddyStringsRequest("ab", "ba"), out var t0010); // true
-
-            var r0020 = Run(new BuddyStringsRequest("ab", "ab"), out var t0020); // false
-
-            var r0030 = Run(new BuddyStringsRequest("aa", "aa"), out var t0030); // true
-
-            var r0040 = Run(new BuddyStringsRequest("a", "x"), out var t0040); // false
-
-            var r0050 = Run(new BuddyStringsRequest("a", "a"), out var t0050); // false
-
-            var r0060 = Run(new BuddyStringsRequest("phongho", "phongho"), out var t0060); // true
-
-            var r0070 = Run(new BuddyStringsRequest("aaaaaa", "aaaaaa"), out var t0070); // true
-
-            var r0080 = Run(new BuddyStringsRequest("ngocmai", "ngocmai"), out var t0080); // false
-
-            var r0090 = Run(new BuddyStringsRequest("ngocmai","ngacmoi"), out var t0090); // true
-
-            var r0100 = Run(new BuddyStringsRequest("abcd", "badc"), out var t0100); // false
-
-            var r0110 = Run(new BuddyStringsRequest("ab", "babbb"), out var t0110); // false
-
-        }
     }
 
     public class BuddyStringsRequest

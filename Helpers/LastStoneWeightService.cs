@@ -54,9 +54,5 @@ namespace ChallengeHelpers.Services
             return list.ElementAt(0);
         }
 
-        public override void RunTest()
-        {
-            
-        }
     }
 }
