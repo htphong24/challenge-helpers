@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Helpers\ChallengeHelpers.Services.csproj" />
+    <ProjectReference Include="..\ChallengeHelpers.Services\ChallengeHelpers.Services.csproj" />
   </ItemGroup>
 
 </Project>
