@@ -1,5 +1,6 @@
 using ChallengeHelpers.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace ChallengeHelpers.Tests
 {
@@ -10,7 +11,7 @@ namespace ChallengeHelpers.Tests
         public void DoRun_GivenNormalInputs_ReturnsExpectedResult()
         {
             // Arrange
-            
+
             // [1,7,3,3,6,5,6,3,3,7,1]
             var node0010A = new ListNode(1); // last node
             var node0010B = new ListNode(7, node0010A);
@@ -50,10 +51,10 @@ namespace ChallengeHelpers.Tests
             var node0040D = new ListNode(1, node0040C);
 
             // Act
-            var r0010 = new CheckPalindromeLinkedListService().Run(node0010K, out var t0010);
-            var r0020 = new CheckPalindromeLinkedListService().Run(node0020L, out var t0020);
-            var r0030 = new CheckPalindromeLinkedListService().Run(node0030C, out var t0030);
-            var r0040 = new CheckPalindromeLinkedListService().Run(node0040D, out var t0040);
+            var r0010 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 1, 7, 3, 3, 6, 5, 6, 3, 3, 7, 1 }), out var t0010);
+            var r0020 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 1, 7, 3, 3, 6, 5, 5, 6, 3, 3, 7, 1 }), out var t0020);
+            var r0030 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 1, 7, 1 }), out var t0030);
+            var r0040 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 1, 7, 8, 1 }), out var t0040);
 
             // Assert
             Assert.AreEqual(r0010, true);
@@ -75,8 +76,8 @@ namespace ChallengeHelpers.Tests
             var node0060B = new ListNode(0, node0060A);
 
             // Act
-            var r0050 = new CheckPalindromeLinkedListService().Run(node0050A, out var t0050);
-            var r0060 = new CheckPalindromeLinkedListService().Run(node0060B, out var t0060);
+            var r0050 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 7 }), out var t0050);
+            var r0060 = new CheckPalindromeLinkedListService().Run(new ListNode().AddNodes(new[] { 7, 0 }), out var t0060);
 
             // Assert
             Assert.AreEqual(r0050, true);

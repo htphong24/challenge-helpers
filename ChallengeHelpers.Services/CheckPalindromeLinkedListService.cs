@@ -22,9 +22,11 @@ namespace ChallengeHelpers.Services
         {
             var list = new List<int> { head.Val };
 
+            // start from head
             var current = head;
             while (current.Next != null)
             {
+                // move to next node
                 current = current.Next;
                 list.Add(current.Val);
             }
