@@ -58,31 +58,5 @@ namespace ChallengeHelpers.Services
             return sum;
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run("IX", out var t0010); // 9
-
-            var r0020 = Run("III", out var t0020); // 3
-
-            var r0023 = Run("LVIII", out var t0023); // 58
-
-            var r0025 = Run("CCXLV", out var t0025); // 245
-
-            var r0030 = Run("CDLIX", out var t0030); // 459
-
-            var r0040 = Run("CDLXXXIX", out var t0040); // 489
-
-            // min input
-            var r0050 = Run("I", out var t0050); // 1
-
-            // max input
-            var r0060 = Run("MMMCMXCIX", out var t0060); // 3999
-
-            // another edge case
-            var r0070 = Run("MMMIV", out var t0070); // 3004
-
-            // another edge case
-            var r0080 = Run("MCMXCIV", out var t0080); // 1994
-        }
     }
 }
