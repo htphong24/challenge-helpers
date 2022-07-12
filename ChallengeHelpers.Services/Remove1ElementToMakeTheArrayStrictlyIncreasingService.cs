@@ -47,38 +47,5 @@ namespace ChallengeHelpers.Services
 
             return true;
         }
-
-        public override void RunTest()
-        {
-            var r0010 = Run(new[] {1, 2, 10, 5, 7}, out var t0010); // true
-
-            var r0020 = Run(new[] {2, 3, 1, 2}, out var t0020); // false
-
-            var r0030 = Run(new[] {1, 1, 1}, out var t0030); // false
-
-            var r0040 = Run(new[] {1, 1}, out var t0040); // true
-
-            var r0050 = Run(new [] {3,1}, out var t0050); // true
-
-            var r0060 = Run(new [] {1,3}, out var t0060); // true
-
-            var r0070 = Run(new [] {1,2,10,10,5,7}, out var t0070); // false
-
-            var r0080 = Run(new [] {1,2,10,5,10,7}, out var t0080); // false
-
-            var r0090 = Run(new [] {1,2,10,5,11,7}, out var t0090); // false
-
-            var r0100 = Run(new [] {3,2,1}, out var t0100); // false
-
-            var r0110 = Run(new [] {3,1,1}, out var t0110); // false
-
-            var r0111 = Run(new[] { 1, 3, 1 }, out var t0111); // true
-
-            var r0112 = Run(new[] { 1, 1, 3 }, out var t0112); // true
-
-            var r0113 = Run(new[] { 3, 1, 2 }, out var t0113); // true
-
-            var r0114 = Run(new[] { 1, 2, 3, 4, 5 }, out var t0114); // true
-        }
     }
 }
