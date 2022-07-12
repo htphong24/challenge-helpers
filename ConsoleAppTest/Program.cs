@@ -10,7 +10,6 @@ namespace ConsoleAppTest
         {
             new RomanToIntegerService().RunTest();
             new RansomNoteService().RunTest();
-            new ReverseLinkedListService().RunTest();
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
             new IntegerReplacementService().RunTest();
         }
