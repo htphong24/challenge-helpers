@@ -9,7 +9,6 @@ namespace ConsoleAppTest
         static void Main(string[] args)
         {
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
-            new IntegerReplacementService().RunTest();
         }
     }
 }
