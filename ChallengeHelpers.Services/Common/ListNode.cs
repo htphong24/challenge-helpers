@@ -28,5 +28,25 @@
 
             return head;
         }
+
+        /// <summary>
+        /// Converts [1,2,3] as LinkedList to "123"
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
+        public string ConvertToString()
+        {
+            var result = val.ToString();
+
+            var nextNode = this;
+            while (nextNode.next != null)
+            {
+                // Move to next node
+                nextNode = nextNode.next;
+                result += nextNode.val;
+            }
+
+            return result;
+        }
     }
 }
