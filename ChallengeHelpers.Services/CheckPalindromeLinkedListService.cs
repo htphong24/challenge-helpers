@@ -20,15 +20,15 @@ namespace ChallengeHelpers.Services
 
         protected override bool DoRun(ListNode head)
         {
-            var list = new List<int> { head.Val };
+            var list = new List<int> { head.val };
 
             // start from head
             var current = head;
-            while (current.Next != null)
+            while (current.next != null)
             {
                 // move to next node
-                current = current.Next;
-                list.Add(current.Val);
+                current = current.next;
+                list.Add(current.val);
             }
 
             return IsPalindrome(list);

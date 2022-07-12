@@ -20,10 +20,10 @@ namespace ChallengeHelpers.Services
             ListNode slow = head;
             ListNode fast = head;
 
-            while (fast?.Next != null)
+            while (fast?.next != null)
             {
-                slow = slow.Next;
-                fast = fast.Next.Next;
+                slow = slow.next;
+                fast = fast.next.next;
 
                 // ***** slow = 1, fast = 1 *****
                 // slow = 2

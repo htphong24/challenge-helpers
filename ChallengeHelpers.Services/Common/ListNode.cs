@@ -5,14 +5,14 @@
     /// </summary>
     public class ListNode
     {
-        public int Val { get; set; }
+        public int val { get; set; }
 
-        public ListNode Next { get; set; }
+        public ListNode next { get; set; }
 
         public ListNode(int val = 0, ListNode next = null)
         {
-            Val = val;
-            Next = next;
+            this.val = val;
+            this.next = next;
         }
 
         public ListNode AddNodes(int[] array)
