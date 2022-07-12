@@ -17,16 +17,16 @@
 
         public ListNode AddNodes(int[] array)
         {
-            ListNode currentNode;
-            var nextNode = new ListNode(array[array.Length - 1]); // first node
+            var currentNode = new ListNode(array[0]); // first node
+            var head = currentNode;
 
-            for (int i = array.Length - 2; i >= 0; i--)
+            for (int i = 1; i < array.Length; i++)
             {
-                currentNode = new ListNode(array[i], nextNode);
-                nextNode = currentNode;
+                currentNode.next = new ListNode(array[i]);
+                currentNode = currentNode.next;
             }
 
-            return nextNode;
+            return head;
         }
     }
 }
