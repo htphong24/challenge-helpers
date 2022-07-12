@@ -47,30 +47,6 @@ namespace ChallengeHelpers.Services
             return true;
         }
 
-        public override void RunTest()
-        {
-            var r0010 = Run(new RansomNoteRequest("a","b"), out var t0010); // false
-
-            var r0020 = Run(new RansomNoteRequest("aa", "ab"), out var t0020); // false
-
-            var r0030 = Run(new RansomNoteRequest("aa", "aab"), out var t0030); // true
-
-            var r0040 = Run(new RansomNoteRequest("thanh","xytbhbattanzhanc"), out var t0040); // true
-
-            var r0050 = Run(new RansomNoteRequest("a","b"), out var t0050); // false
-
-            var r0060 = Run(new RansomNoteRequest("thanh", "xytbhbattazhac"), out var t0060); // false
-
-            var r0070 = Run(new RansomNoteRequest("thanh", "xybthanhzc"), out var t0070); // true
-
-            var r0080 = Run(new RansomNoteRequest("aa", "a"), out var t0080); // false
-
-            var r0090 = Run(new RansomNoteRequest("thanhphong", "thanhphong"), out var t0090); // true
-
-            var r0100 = Run(new RansomNoteRequest("thanhphong", "thanhphon"), out var t0100); // false
-
-            var r0110 = Run(new RansomNoteRequest("thanhphong", "o"), out var t0110); // false
-        }
     }
 
     public class RansomNoteRequest

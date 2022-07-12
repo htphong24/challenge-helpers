@@ -8,7 +8,6 @@ namespace ConsoleAppTest
     {
         static void Main(string[] args)
         {
-            new RansomNoteService().RunTest();
             new Remove1ElementToMakeTheArrayStrictlyIncreasingService().RunTest();
             new IntegerReplacementService().RunTest();
         }
