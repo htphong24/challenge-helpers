@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeHelpers.Services", "ChallengeHelpers.Services\ChallengeHelpers.Services.csproj", "{6D9CCD42-0C45-43E7-A1A2-A26DCC484E79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeHelpers.Tests", "ChallengeHelpers.Tests\ChallengeHelpers.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeHelpers.Services.Tests", "ChallengeHelpers.Services.Tests\ChallengeHelpers.Services.Tests.csproj", "{BF315618-9EA3-407B-8DE5-4886ED946E23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

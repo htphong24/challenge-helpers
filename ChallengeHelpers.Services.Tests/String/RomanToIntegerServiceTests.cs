@@ -2,7 +2,7 @@ using ChallengeHelpers.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace ChallengeHelpers.Tests
+namespace ChallengeHelpers.Services.Tests
 {
     [TestClass]
     public class RomanToIntegerServiceTests

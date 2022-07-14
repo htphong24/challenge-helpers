@@ -1,7 +1,7 @@
 using ChallengeHelpers.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ChallengeHelpers.Tests
+namespace ChallengeHelpers.Services.Tests
 {
     [TestClass]
     public class Remove1ElementToMakeTheArrayStrictlyIncreasingServiceTests
