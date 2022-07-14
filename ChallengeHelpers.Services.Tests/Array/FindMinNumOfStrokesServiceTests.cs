@@ -10,8 +10,8 @@ namespace ChallengeHelpers.Services.Tests
         public void DoRun_GivenNormalInputs_ReturnsExpectedResult()
         {
             // Arrange
-            var randomArray0010 = Helper.GenerateRandomArray(min: 1, max: 1000 * 1000, length: 1000);
-            var randomArray0020 = Helper.GenerateRandomArray(min: 1, max: 1000 * 1000 * 1000, length: 100 * 1000);
+            var randomArray0010 = Helpers.GenerateRandomArray(min: 1, max: 1000 * 1000, length: 1000);
+            var randomArray0020 = Helpers.GenerateRandomArray(min: 1, max: 1000 * 1000 * 1000, length: 100 * 1000);
             
             // Act
             var r0010 = new FindMinNumOfStrokesService().Run(new[] { 1, 3, 2, 1, 2 }, out var t0010);
@@ -40,9 +40,9 @@ namespace ChallengeHelpers.Services.Tests
         public void DoRun_GivenEdgeCases_ReturnsExpectedResult()
         {
             // Arrange
-            var consecutiveArray0010 = Helper.GenerateConsecutiveArray(min: 999999777, max: 1000 * 1000 * 1000);
-            var consecutiveArray0020 = Helper.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
-            var consecutiveArray0030 = Helper.GenerateConsecutiveArray(min: 50, max: 99856);
+            var consecutiveArray0010 = Helpers.GenerateConsecutiveArray(min: 999999777, max: 1000 * 1000 * 1000);
+            var consecutiveArray0020 = Helpers.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
+            var consecutiveArray0030 = Helpers.GenerateConsecutiveArray(min: 50, max: 99856);
 
             // Act
             var r0060 = new FindMinNumOfStrokesService().Run(new[] { 1 }, out var t0060);

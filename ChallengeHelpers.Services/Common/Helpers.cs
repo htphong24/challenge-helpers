@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ChallengeHelpers.Services
 {
-    public static class Helper
+    public static class Helpers
     {
         /// <summary>
         /// Generates an array containing random numbers

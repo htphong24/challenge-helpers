@@ -32,8 +32,8 @@ namespace ChallengeHelpers.Services.Tests
         public void DoRun_GivenEdgeCases_ReturnsExpectedResult()
         {
             // Arrange
-            var randomArray = Helper.GenerateRandomArray(min: -1, max: 3, length: 1000);
-            var consecutiveArray = Helper.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
+            var randomArray = Helpers.GenerateRandomArray(min: -1, max: 3, length: 1000);
+            var consecutiveArray = Helpers.GenerateConsecutiveArray(min: 1, max: 100 * 1000);
 
             // Act
             var r0070 = new FindSmallestMissingIntService().Run(new[] { int.MaxValue }, out var t0070);
