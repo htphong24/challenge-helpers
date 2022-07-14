@@ -1,4 +1,6 @@
-﻿namespace ChallengeHelpers.Services
+﻿using ChallengeHelpers.Common;
+
+namespace ChallengeHelpers.Services
 {
     public class MiddleOfTheLinkedListService : ServiceBase<ListNode, ListNode>
     {

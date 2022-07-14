@@ -1,3 +1,4 @@
+using ChallengeHelpers.Common;
 using ChallengeHelpers.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;

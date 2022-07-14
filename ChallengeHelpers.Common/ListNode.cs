@@ -1,4 +1,6 @@
-﻿namespace ChallengeHelpers.Services
+﻿using System;
+
+namespace ChallengeHelpers.Common
 {
     /// <summary>
     /// Linked List Node
