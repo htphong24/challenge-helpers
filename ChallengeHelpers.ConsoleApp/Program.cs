@@ -13,7 +13,7 @@ namespace ChallengeHelpers.ConsoleApp
             var r5 = F();
         }
 
-        private int F()
+        private static int F()
         {
             return 0;
         }
