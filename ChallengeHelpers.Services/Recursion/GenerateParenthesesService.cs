@@ -18,6 +18,12 @@ namespace ChallengeHelpers.Services
          * n=3       => ["((()))","(()())","(())()","()(())","()()()"]
          * */
 
+        /// <summary>
+        /// Time & Space complexity is O(2^2n) or O(2^n) since there are 2 cases to check every time we are about to add a new parenthesis 
+        /// (i.e. will we add "open" or will we add "closed" parenthesis?)
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         protected override IList<string> DoRun(int n)
         {
             var result = new List<string>();
