@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ChallengeHelpers.Services
 {
-    public class PrintPermutationsService : ServiceBase<int[], IList<IList<int>>>
+    public class ReturnPermutationsService : ServiceBase<int[], IList<IList<int>>>
     {
         /*
          * INPUT:               => OUTPUT:
@@ -15,7 +15,8 @@ namespace ChallengeHelpers.Services
          * */
 
         /// <summary>
-        /// Time Complexity is O(n^n!) since there are n! permutations & there are n levels of decision tree
+        /// Time Complexity is O(n^n!) since there are n! permutations & there are n levels of decision tree.
+        /// The same to Space Complexity.
         ///    ____ ____
         ///   /    |    \
         ///   1    2    3       \    
