@@ -6,7 +6,7 @@ using System.Linq;
 namespace ChallengeHelpers.Services
 {
     /// <summary>
-    /// LeetCode problem# 31
+    /// LeetCode problem# 60
     /// </summary>
     public class PermutationSequenceService : ServiceBase<PermutationSequenceRequest, string>
     {
@@ -21,7 +21,6 @@ namespace ChallengeHelpers.Services
 
         /// <summary>
         /// </summary>
-        /// <param name="nums"></param>
         /// <returns></returns>
         protected override string DoRun(PermutationSequenceRequest rq)
         {
