@@ -11,5 +11,10 @@ namespace ChallengeHelpers.Common
         {
             return string.Join(',', list);
         }
+
+        public static string ConvertToString<T>(this T[] arr)
+        {
+            return string.Join(',', arr);
+        }
     }
 }
