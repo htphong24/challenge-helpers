@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace ChallengeHelpers.Services
 {
+    /// <summary>
+    /// LeetCode problem# 1046
+    /// </summary>
     public class LastStoneWeightService : ServiceBase<int[], int>
     {
         /*
@@ -33,25 +36,28 @@ namespace ChallengeHelpers.Services
 
         protected override int DoRun(int[] stones)
         {
-            //stones = new[] { 10, 950, 1000, 3, 100, 1 }; for testing
+            // Example:
+            //stones = new[] { 10, 950, 1000, 3, 100, 1 }; // for testing
+            // Time Complexity is O(nlogn)
+            // Space Complexity is O(n) since the queue has to store <stones.Length> elements
 
-            // init (sorted) list
-            var list = stones.ToList();
-
-            while (list.Count > 1)
+            var queue = new PriorityQueue<int, int>();
+            foreach (var stone in stones) // O(n)
             {
-                list = list.OrderBy(e => e).ToList();
-
-                // smash largest stones
-                var max = list.ElementAt(list.Count - 1);
-                var secondMax = list.ElementAt(list.Count - 2);
-                var combo = max - secondMax;
-                list.RemoveAt(list.Count - 1);
-                list.RemoveAt(list.Count - 1);
-                list.Add(combo);
+                // Multiply -1 to make the priority queue a MAX Heap
+                queue.Enqueue(stone, stone * (-1));
             }
 
-            return list.ElementAt(0);
+            while (queue.Count > 1) // O(n)
+            {
+                int max = queue.Dequeue(); // O(logn)
+                int secondMax = queue.Dequeue(); // O(logn)
+                int newWeight = max - secondMax;
+                queue.Enqueue(newWeight, newWeight * (-1)); // O(logn)
+            }
+
+            // Get the last element
+            return Math.Abs(queue.Peek()); // O(1)
         }
 
     }

@@ -3,8 +3,16 @@ using System.Linq;
 
 namespace ChallengeHelpers.Services
 {
+    /// <summary>
+    /// LeetCode problem# 
+    /// </summary>
     public class FindSmallestMissingIntService : ServiceBase<int[], int>
     {
+        /*
+         * INPUT:                      => OUTPUT:
+         * 
+         * */
+
         /// <summary>
         /// 
         /// </summary>
